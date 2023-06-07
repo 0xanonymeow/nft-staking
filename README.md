@@ -26,14 +26,14 @@ Users can stake their NFTs for a fixed staking period to earn rewards. There are
 
 At the end of the staking period, users can claim the full reward amount which will be added to their C balance.
 
-![image](https://github.com/0xanonymeow/nft-staking/assets/131508930/1b8ca17f-d55f-46f6-8987-1ebda7387445)
+![image](https://im4.ezgif.com/tmp/ezgif-4-c99ff3f577.gif)
 
 
 2. Unstake early and claim penalty reward
 
 Users can unstake their NFT before the end of the staking period, but will earn a penalty reward. The penalty is a deduction of 5 C tokens from the period reward.
 
-![image](https://github.com/0xanonymeow/nft-staking/assets/131508930/f38c0c6c-a660-44a7-a084-18711adf2535)
+![image](https://im4.ezgif.com/tmp/ezgif-4-440fe3e7de.gif)
 
 <br />
 
