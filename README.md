@@ -3,6 +3,7 @@
 This project implements a mock NFT staking interface. Users can view staked NFTs and rewards earned over time.
 
 ## Installation
+
 1. Clone the repository
 2. Install dependencies: `npm install`
 3. Run the server
@@ -12,6 +13,7 @@ This project implements a mock NFT staking interface. Users can view staked NFTs
      - 2. Start the production server: `npm run start`
 
 ## Usage
+
 The staking interface displays mock staked NFTs and the rewards earned for each NFT. Users have an initial balance of 100 C tokens which will increase as they earn staking rewards.
 
 1. Stake for a period and claim full reward
@@ -36,6 +38,5 @@ Users can unstake their NFT before the end of the staking period, but will earn 
 2. Unstake after 60 days
 3. Claim penalty reward = 20 - 5 = 15 C tokens
 4. Penalty reward (15 C) will be added to the user's balance
-
 
 The penalty aims to incentivize staking for the full period.
