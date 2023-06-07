@@ -1,34 +1,41 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# NFT Staking
 
-## Getting Started
+This project implements a mock NFT staking interface. Users can view staked NFTs and rewards earned over time.
 
-First, run the development server:
+## Installation
+1. Clone the repository
+2. Install dependencies: `npm install`
+3. Run the server
+   - a) Run the development frontend server: `npm run dev`
+   - b) Run the production build
+     - 1. Create a production build: `npm run build`
+     - 2. Start the production server: `npm run start`
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-```
+## Usage
+The staking interface displays mock staked NFTs and the rewards earned for each NFT. Users have an initial balance of 100 C tokens which will increase as they earn staking rewards.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+1. Stake for a period and claim full reward
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+Users can stake their NFTs for a fixed staking period to earn rewards. There are 3 staking periods:
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+- 60 days: Earn 10 C tokens
+- 90 days: Earn 20 C tokens
+- 120 days: Earn 30 C tokens
 
-## Learn More
+At the end of the staking period, users can claim the full reward amount which will be added to their C balance.
 
-To learn more about Next.js, take a look at the following resources:
+1. Unstake early and claim penalty reward
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Users can unstake their NFT before the end of the staking period, but will earn a penalty reward. The penalty is a deduction of 5 C tokens from the period reward.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+<br />
 
-## Deploy on Vercel
+### For example:
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+1. Stake for 90 days (reward = 20 C)
+2. Unstake after 60 days
+3. Claim penalty reward = 20 - 5 = 15 C tokens
+4. Penalty reward (15 C) will be added to the user's balance
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+
+The penalty aims to incentivize staking for the full period.
